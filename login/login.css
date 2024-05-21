@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+
+.input-login{
+    display: block;
+    margin-top: 10px;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 10px;
+    
+}
+
+#button{
+    background-color: grey;
+    color: white;
+    display: inline;
+    user-select: none;
+}
+
+#button:hover{
+    cursor: grab;
+}

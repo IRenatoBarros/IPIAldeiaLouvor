@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+}
+
+#input_mandar{
+    width: 30%;
+    height: 30%;
+}
+
+#button{
+    background-color: grey;
+    color: white;
+    display: inline;
+    user-select: none;
+}
+
+#button:hover{
+    cursor: grab;
+}
+
+.element_lista{
+    color: white;
+    height: 30%;
+}
+
+#form_adicionar{
+    display: inline;
+    color: white;
+}
+
+#logo-home{
+    width: 5%;
+}
+
+#logo-home:hover{
+    border-style: solid;
+    border: 1px;
+}

@@ -1,0 +1,26 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+.botton{
+    background-color: grey;
+    width: 20%;
+    color: white;
+    padding: 1%;
+    margin-left: 40%;
+    margin-top: 5%;
+    text-decoration: none;
+    user-select: none;
+    border-radius: 5px 5px;
+}
+
+.botton:hover{
+    background-color: rgb(206, 206, 206);
+    cursor:grab;
+}
