@@ -1,6 +1,6 @@
 const inputUser = document.getElementsByTagName('input')[0]
 const inputSenha = document.getElementsByTagName('input')[1]
-const botton = document.getElementsByTagName('p')[0]
+const botton = document.getElementById('button')
 
 
 botton.addEventListener('click',(e)=>{

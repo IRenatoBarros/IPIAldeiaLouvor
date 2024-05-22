@@ -2,22 +2,30 @@ const inputTitle = document.getElementById('input_title')
 const botao = document.getElementById('button')
 const lista = document.getElementById('listaResult')
 const body = document.getElementsByTagName('body')
+const form = document.getElementById('form_pesquisar')
+
+
+const listaMusicasString = localStorage.getItem('listaMusicas')
+const listaMusicas = JSON.parse(listaMusicasString)
+
+console.log(listaMusicas)
+
+
+lista.innerHTML = listaMusicas
+
+
 
 botao.addEventListener('click',()=>{
 
-    localStorage.setItem('renatobarros','renatobarros')
-    localStorage.setItem('1234','1234')
 
     const valor = localStorage.getItem(inputTitle.value)
 
     if(valor != null){
         //const li = JSON.parse(valor)
 
-    console.log(botao)
 
     //console.log(li)
-
-    lista.innerHTML = valor
+        lista.innerHTML = valor
     }else if(valor==null){
         console.log('fala rapaz')
         const p = document.createElement('p')
@@ -30,6 +38,6 @@ botao.addEventListener('click',()=>{
     
 })
 
-inputTitle.addEventListener('submit',(e)=>{
-    e.preventDefaut()
+form.addEventListener('submit',(event)=>{
+    event.preventDefault()
 })
